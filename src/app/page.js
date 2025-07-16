@@ -1,103 +1,136 @@
-import Image from "next/image";
+// 'use client'
+import Image from "next/image"
+// import { headers } from "next/headers"
+// let width = window.innerWidth;
+// let height= window.innerHeight
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+  return(
+    <div>
+      <headers>
+        <title>
+          TanzidAjmainInfo
+        </title>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Manufacturing+Consent&family=PT+Sans+Narrow:wght@400;700&display=swap');
+        </style>
+      </headers>
+    <div className="flex flex-row justify-between p-3.5 min-w-dvw">
+      <h1 className="font-bold  ">
+        Portified folio
+      </h1>
+      <h1 className="text-amber-600 pl-2.5 font-bold">
+        .
+      </h1>
+      <div className="flex justify-end">
+      <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-asterisk-icon lucide-asterisk"><path d="M12 6v12"/><path d="M17.196 9 6.804 15"/><path d="m6.804 9 10.392 6"/></svg>
+      </div>
     </div>
-  );
+
+    {/* <div className="flex-col justify-center  justify-items-center "> */}
+    <div className="w-dvw flex justify-center pt-20 pb-5">
+    <Image src={'/IMG_0021.jpg'} width={'270'} height={'300'} alt="loading the dumbass"/>
+      <h1 className="font-[IBM_Plex_Mono] text-amber-600 font-semibold text-xl">
+        Hi,<br/> the sweetest <br/>person there.
+      </h1>
+      <div/>
+   </div>
+      <div className="flex justify-center ">
+        <p className="font-[IBM_Plex_Mono] w-115 p-5">
+          I'm Tanzid Ajmain, a BBA dude at the University of Dhaka, 
+        love pogramming, hoping around data science these days, have a soft corner for content creation and visuals, 
+        Have a good hand in painting. Love to dissect creative fields.
+        </p>
+    </div>
+
+          <div className="flex justify-center ">
+        <p className="text-amber-100 font-[IBM_Plex_Mono] w-115 p-5">
+         x--------------------------------x
+        </p>
+    </div>
+
+      <div className="flex justify-center ">
+        <p className="text-amber-100 font-[IBM_Plex_Mono] w-115 p-5">
+         Proffesional plan? Consulting in creative fields and business analytics.
+        </p>
+    </div>
+
+      <div className="flex justify-center ">
+        <p className="text-amber-100 font-[IBM_Plex_Mono] w-115 p-5">
+         x--------------------------------x
+        </p>
+    </div>
+
+       <div className="flex justify-center ">
+        <p className="text-amber-200 font-[IBM_Plex_Mono] w-115 p-5">
+         My <a className="text-blue-400" href="https://www.instagram.com/tanzid_akashe/">Instagram</a>, <a className="text-blue-400" href="hellotanzid@gmail.com">Email</a>
+        </p>
+    </div>
+
+          <div className="flex justify-center ">
+        <p className="text-amber-0 font-[IBM_Plex_Mono] w-115 p-5">
+         x--------------------------------x
+        </p>
+    </div>
+
+    <div className="flex justify-center ">
+        <p className="text-amber-300 font-[IBM_Plex_Mono] w-115 p-5">
+         A movie to watch : la haine
+        </p>
+    </div>
+
+    <div className="flex justify-center ">
+        <p className="text-amber-100 font-[IBM_Plex_Mono] w-115 p-5">
+         x--------------------------------x
+        </p>
+    </div>
+
+    <div className="flex justify-center ">
+        <p className="text-amber-400 font-[IBM_Plex_Mono] w-115 p-5">
+         A book to read : Idk I'm not that good of a reader.
+        </p>
+    </div>
+
+      <div className="flex justify-center ">
+        <p className="text-amber-100 font-[IBM_Plex_Mono] w-115 p-5">
+         x--------------------------------x
+        </p>
+    </div>
+
+      <div className="flex justify-center ">
+        <p className="text-amber-500 font-[IBM_Plex_Mono] w-115 p-5">
+          A good perfume to try : Sea Fruit by "শূন্য ও অসীম"
+        </p>
+    </div>
+
+         <div className="flex justify-center ">
+        <p className="text-amber-100 font-[IBM_Plex_Mono] w-115 p-5">
+         x--------------------------------x
+        </p>
+    </div>
+
+    <div className="flex justify-center ">
+        <p className="text-amber-600 font-[IBM_Plex_Mono] w-115 p-5">
+         Monthly qoute : One must imagine sisyphus happy.*
+        </p>
+    </div>
+     
+     <div className="pl-10 pt-15 flex w-dvw justify-center font-[IBM_Plex_Mono]">
+      <h1>-X-</h1>
+     </div>
+
+    <div className="w-dvw flex justify-around pl-10">
+      <Image className="rounded-2xl" src={'/WhatsApp Image 2025-07-17 at 03.17.26.jpeg'} height={200} width={200}/>
+    </div>
+    <div className="flex justify-center pl-10 pb-10">
+      <h1 className=" w-dvw text-xs pt-2 flex justify-center font-[IBM_Plex_Mono]">** Car's giving you a flower <br/> for reading till the end.</h1>
+    </div>
+
+     <div className="flex w-dvw justify-end p-5">
+      <h1 className="text-s pt-2 font-[IBM_Plex_Mono]">~THE END~</h1>
+    </div>
+
+   </div>
+  )
 }
+  
