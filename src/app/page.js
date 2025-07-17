@@ -1,10 +1,27 @@
-// 'use client'
+'use client'
 import Image from "next/image"
+import {motion} from 'motion/react'
 // import { headers } from "next/headers"
 // let width = window.innerWidth;
 // let height= window.innerHeight
 
 export default function Home() {
+
+  const containerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2, // delay between each child
+    },
+  },
+};
+
+const childVariants = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
+
   return(
     <div>
       <headers>
@@ -29,18 +46,38 @@ export default function Home() {
 
     {/* <div className="flex-col justify-center  justify-items-center "> */}
     <div className="w-dvw flex justify-center pt-20 pb-5">
-    <Image src={'/IMG_0021.jpg'} width={'270'} height={'300'} alt="loading the dumbass"/>
-      <h1 className="font-[IBM_Plex_Mono] text-amber-600 font-semibold text-xl">
-        Hi,<br/> the sweetest <br/>person there.
+    <Image src={'/WhatsApp Image 2025-07-17 at 19.28.19.jpeg'} width={'270'} height={'300'} alt="loading the dumbass"/>
+      <h1 className="font-[IBM_Plex_Mono] text-amber-600 font-semibold text-xl pr-5">
+        Hi 👋,<br/> the sweetest <br/>person <br/>out there.
       </h1>
       <div/>
    </div>
       <div className="flex justify-center ">
-        <p className="font-[IBM_Plex_Mono] w-115 p-5">
+        <motion.div 
+        variants={containerVariants}
+        initial="hidden"
+        animate="show"
+        className="space-y-4"
+        >
+          <motion.p variants={childVariants} className="font-[IBM_Plex_Mono] w-115 p-5">
           I'm Tanzid Ajmain, a BBA dude at the University of Dhaka, 
         love pogramming, hoping around data science these days, have a soft corner for content creation and visuals, 
         Have a good hand in painting. Love to dissect creative fields.
-        </p>
+        </motion.p>
+
+       <motion.p variants={childVariants} className="font-[IBM_Plex_Mono] w-115 p-5">
+          I'm Tanzid Ajmain, a BBA dude at the University of Dhaka, 
+        love pogramming, hoping around data science these days, have a soft corner for content creation and visuals, 
+        Have a good hand in painting. Love to dissect creative fields.
+        </motion.p>
+
+         <motion.p variants={childVariants} className="font-[IBM_Plex_Mono] w-115 p-5">
+          I'm Tanzid Ajmain, a BBA dude at the University of Dhaka, 
+        love pogramming, hoping around data science these days, have a soft corner for content creation and visuals, 
+        Have a good hand in painting. Love to dissect creative fields.
+        </motion.p>
+
+        </motion.div>
     </div>
 
           <div className="flex justify-center ">
@@ -115,14 +152,14 @@ export default function Home() {
         </p>
     </div>
      
-     <div className="pl-10 pt-15 flex w-dvw justify-center font-[IBM_Plex_Mono]">
+     <div className="pl-5 pt-15 flex w-dvw justify-center font-[IBM_Plex_Mono]">
       <h1>-X-</h1>
      </div>
 
-    <div className="w-dvw flex justify-around pl-10">
+    <div className="w-dvw flex justify-around pt-10">
       <Image className="rounded-2xl" src={'/WhatsApp Image 2025-07-17 at 03.17.26.jpeg'} height={200} width={200}/>
     </div>
-    <div className="flex justify-center pl-10 pb-10">
+    <div className="flex justify-center pt-10 pb-10">
       <h1 className=" w-dvw text-xs pt-2 flex justify-center font-[IBM_Plex_Mono]">** Car's giving you a flower <br/> for reading till the end.</h1>
     </div>
 
