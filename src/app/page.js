@@ -23,7 +23,7 @@ const childVariants = {
 };
 
   return(
-    <div>
+    <div className="max-w-dvw">
       <headers>
         <title>
           TanzidAjmainInfo
@@ -45,14 +45,14 @@ const childVariants = {
     </div>
 
     {/* <div className="flex-col justify-center  justify-items-center "> */}
-    <div className="w-dvw flex justify-center pt-20 pb-5">
+    <div className="w-dvw flex justify-center pl-3 pt-20 pb-5">
     <Image src={'/WhatsApp Image 2025-07-17 at 19.28.19.jpeg'} width={'270'} height={'300'} alt="loading the dumbass"/>
       <h1 className="font-[IBM_Plex_Mono] text-amber-600 font-semibold text-xl pr-5">
         Hi 👋,<br/> the sweetest <br/>person <br/>out there.
       </h1>
       <div/>
    </div>
-      <div className="flex justify-center ">
+      <div className="flex justify-center p-2 ">
         <motion.div 
         variants={containerVariants}
         initial="hidden"
