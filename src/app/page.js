@@ -7,23 +7,8 @@ import {motion} from 'motion/react'
 
 export default function Home() {
 
-  const containerVariants = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2, // delay between each child
-    },
-  },
-};
-
-const childVariants = {
-  hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-};
-
   return(
-    <div className="max-w-dvw">
+    <div className="w-dvw">
       <headers>
         <title>
           TanzidAjmainInfo
@@ -46,38 +31,18 @@ const childVariants = {
 
     {/* <div className="flex-col justify-center  justify-items-center "> */}
     <div className="w-dvw flex justify-center pl-3 pt-20 pb-5">
-    <Image src={'/WhatsApp Image 2025-07-17 at 19.28.19.jpeg'} width={'270'} height={'300'} alt="loading the dumbass"/>
+    <Image alt={'loading the dumbass'} src={'/WhatsApp Image 2025-07-17 at 19.28.19.jpeg'} width={'270'} height={'300'} />
       <h1 className="font-[IBM_Plex_Mono] text-amber-600 font-semibold text-xl pr-5">
         Hi 👋,<br/> the sweetest <br/>person <br/>out there.
       </h1>
       <div/>
    </div>
-      <div className="flex justify-center p-2 ">
-        <motion.div 
-        variants={containerVariants}
-        initial="hidden"
-        animate="show"
-        className="space-y-4 pl-2 p-05"
-        >
-          <motion.p variants={childVariants} className="font-[IBM_Plex_Mono] w-115 p-5">
+      <div className="flex justify-center">
+        <h1 className="font-[IBM_Plex_Mono] w-105 p-2">
           I'm Tanzid Ajmain, a BBA dude at the University of Dhaka, 
         love pogramming, hoping around data science these days, have a soft corner for content creation and visuals, 
         Have a good hand in painting. Love to dissect creative fields.
-        </motion.p>
-
-       <motion.p variants={childVariants} className="font-[IBM_Plex_Mono] w-115 p-5">
-          I'm Tanzid Ajmain, a BBA dude at the University of Dhaka, 
-        love pogramming, hoping around data science these days, have a soft corner for content creation and visuals, 
-        Have a good hand in painting. Love to dissect creative fields.
-        </motion.p>
-
-         <motion.p variants={childVariants} className="font-[IBM_Plex_Mono] w-115 p-5">
-          I'm Tanzid Ajmain, a BBA dude at the University of Dhaka, 
-        love pogramming, hoping around data science these days, have a soft corner for content creation and visuals, 
-        Have a good hand in painting. Love to dissect creative fields.
-        </motion.p>
-
-        </motion.div>
+         </h1>
     </div>
 
           <div className="flex justify-center ">
@@ -157,7 +122,7 @@ const childVariants = {
      </div>
 
     <div className="w-dvw flex justify-around pt-10">
-      <Image className="rounded-2xl" src={'/WhatsApp Image 2025-07-17 at 03.17.26.jpeg'} height={200} width={200}/>
+      <Image alt={'catto'} className="rounded-2xl" src={'/WhatsApp Image 2025-07-17 at 03.17.26.jpeg'} height={200} width={200}/>
     </div>
     <div className="flex justify-center pt-10 pb-10">
       <h1 className=" w-dvw text-xs pt-2 flex justify-center font-[IBM_Plex_Mono]">** Car's giving you a flower <br/> for reading till the end.</h1>
