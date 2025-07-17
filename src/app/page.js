@@ -57,7 +57,7 @@ const childVariants = {
         variants={containerVariants}
         initial="hidden"
         animate="show"
-        className="space-y-4"
+        className="space-y-4 pl-2 p-05"
         >
           <motion.p variants={childVariants} className="font-[IBM_Plex_Mono] w-115 p-5">
           I'm Tanzid Ajmain, a BBA dude at the University of Dhaka, 
